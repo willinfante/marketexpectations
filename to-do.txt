@@ -1,0 +1,10 @@
+- broad_tape_ticker.py
+  - Print out ASCII chart from 'expectation'
+  - ASCIICHARTPY or similar
+
+- MARKET_EXPECTATION_MODEL.py
+  - Make initial data download STOP after 2 years before current date.
+  - Look at line 82
+
+- UPDATE.py
+  - Get data to update every morning for the previous day

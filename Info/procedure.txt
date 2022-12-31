@@ -1,0 +1,28 @@
+for first day,
+  get close value @ 4:00
+  set the expectation, index to the close value
+  set the set the expectationchange, realchange, and adjustedrealchange, and bearbullratio, and rawexpectations to 0
+
+for the rest of the days
+  get close value @ 4:00
+  get the close value @ 3:30
+
+  set expectationchange to be the percent change between 4 and 3:30 for today
+  set todays expectation to be (yesterday's expectation / 100 * expectationchange) + yesterday's expectation
+  
+  set index to today's 4:00 value
+  
+  set realchange to be percent change from yesterday's 4:00 to today's 4:00
+  set adjustedrealchange for yesterday to be percent change from yesterday's 4:00 to today's 4:00
+
+  set bearbullratio to (
+    count number of days with an expectation change < 0
+  / 
+    count number of days with expectation change > 0
+  )
+
+  set rawexpectations to (
+    get rawexpectations from yesterday,
+      add 1 if expectationchange > 0
+      subtract 1 if expectationchange < 0
+  )

@@ -1,0 +1,12 @@
+Alpha Vantage
+Key: Q5K1CUZA308OQV4J
+https://www.alphavantage.co/documentation/
+Intraday and Intraday (Extended)
+Algorithm (EXAMPLE WITH ‘UVXY’)
+Get historical data
+https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY_EXTENDED&symbol=UVXY&interval=30min&slice=year1month1&apikey=Q5K1CUZA308OQV4J
+Rerun - change year1month1 to year1 month2, continue to rest of year, based on the current month
+And then to older years (year2month(1-12), year3month1(1-12)
+Put into database
+Get prices for 3:30 and 4:00 each day
+Get percent change between these times each day

@@ -1,0 +1,5 @@
+Modified\ Data/
+data/
+*.csv
+Parts/
+test.py
