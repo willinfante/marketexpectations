@@ -1,3 +1,8 @@
+Used to combine the last 30 minutes of trade from each trading day into one big chart, with a variety of stocks. A test of the wall street theory that the last 30 minutes of trade is somewhat indicative of what is to happen the next day. This program was created to test that theory and see if any long term trends are present with such data.
+
+
+
+
 Example Usage:
 
 ```bash
